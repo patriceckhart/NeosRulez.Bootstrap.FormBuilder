@@ -3,9 +3,9 @@
 A Neos CMS package which makes the Form Builder Bootstrap 5 compatible.
 
 
-## Look and feel
+## Look and feel in backend
 
-
+![HybridAuth](https://raw.githubusercontent.com/patriceckhart/NeosRulez.Bootstrap.FormBuilder/master/FormBuilder.png)
 
 
 ## Installation
