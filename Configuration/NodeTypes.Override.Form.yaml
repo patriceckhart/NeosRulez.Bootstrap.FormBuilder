@@ -1,0 +1,61 @@
+'Neos.NodeTypes.Form:Form':
+  ui: ~
+'Neos.Form.Builder:NodeBasedForm':
+  abstract: true
+  ui:
+    label: i18n
+    icon: 'icon-envelope'
+    group: general
+  properties:
+    'preset':
+      defaultValue: 'bootstrap'
+      ui: ~
+    'submitLabel':
+      type: string
+      ui:
+        label: NeosRulez.Bootstrap.FormBuilder:NodeTypes.Content.NodeBasedForm:properties.submitLabel
+        inspector:
+          group: 'form'
+    'hideLabels':
+      type: boolean
+      ui:
+        label: NeosRulez.Bootstrap.FormBuilder:NodeTypes.Content.NodeBasedForm:properties.hideLabels
+        reloadIfChanged: true
+        inspector:
+          group: 'form'
+          position: 'end'
+'Neos.Form.Builder:FormElement':
+  abstract: true
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.Form.Builder:IdentifierMixin': true
+    'Neos.Form.Builder:LabelMixin': true
+    'Neos.Form.Builder:DefaultValueMixin': true
+    'Neos.Form.Builder:RequiredCheckboxMixin': true
+'Neos.Form.Builder:EmailFinisher':
+  properties:
+    'templateSource':
+      type: string
+      ui: ~
+    'format':
+      defaultValue: 'html'
+      type: string
+      ui: ~
+    'attachAllPersistentResources':
+      defaultValue: true
+      type: boolean
+      ui: ~
+'Neos.Form.Builder:ElementCollection':
+  ui:
+    label: 'Elements'
+    icon: 'icon-list'
+    inlineEditable: true
+  options:
+    fusion:
+      prototypeGenerator: null
+  superTypes:
+    'Neos.Neos:ContentCollection': true
+  constraints:
+    nodeTypes:
+      '*': false
+      'NeosRulez.Bootstrap:Section': false

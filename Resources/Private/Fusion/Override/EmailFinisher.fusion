@@ -1,0 +1,5 @@
+prototype(Neos.Form.Builder:EmailFinisher.Definition) {
+    options {
+        templatePathAndFilename = 'resource://NeosRulez.Bootstrap.FormBuilder/Private/Templates/Form/Email.html'
+    }
+}

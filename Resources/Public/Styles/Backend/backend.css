@@ -1,0 +1,38 @@
+fieldset[data-_neos-form-builder-type="Neos.Form.Builder:ElementCollection"] { display:block; margin-bottom:1rem; margin-top:-1rem; }
+fieldset[data-_neos-form-builder-type="Neos.Form.Builder:ElementCollection"]::before { display:block; content:'📄 Elements'; font-weight:bold; font-size:0.7rem; color:#3f3f3f; }
+
+
+div[data-_neos-form-builder-type="Neos.Form.Builder:FinisherCollection"] { display:block; margin-bottom:1rem; margin-top:-1rem; }
+div[data-_neos-form-builder-type="Neos.Form.Builder:FinisherCollection"]::before { display:block; content:'👍 Finisher'; font-weight:bold; font-size:0.7rem; color:#3f3f3f; }
+div[data-_neos-form-builder-type="Neos.Form.Builder:FinisherCollection"] div { display:inline-block; margin-right: 0.25rem; }
+div[data-_neos-form-builder-type="Neos.Form.Builder:FinisherCollection"] div::after { display:inline-block; margin-top:0.25rem; margin-bottom:0.25rem;
+    font-size:0.7rem; color:#FFF; background:#3f3f3f; border-radius:4px; padding:0.25rem;
+}
+div[data-_neos-form-builder-type="Neos.Form.Builder:FinisherCollection"] div[data-_neos-form-builder-type]::after { content: 'Finisher'; }
+div[data-_neos-form-builder-type="Neos.Form.Builder:FinisherCollection"] div[data-_neos-form-builder-type="Neos.Form.Builder:EmailFinisher"]::after { content: 'Email Finisher'; }
+div[data-_neos-form-builder-type="Neos.Form.Builder:FinisherCollection"] div[data-_neos-form-builder-type="Neos.Form.Builder:ConfirmationFinisher"]::after { content: 'Confirmation Finisher'; }
+div[data-_neos-form-builder-type="Neos.Form.Builder:FinisherCollection"] div[data-_neos-form-builder-type="Neos.Form.Builder:RedirectFinisher"]::after { content: 'Redirect Finisher'; }
+
+div[data-_neos-form-builder-type="Neos.Form.Builder:ValidatorCollection"] { display:block; margin-bottom:1rem; margin-top:-1rem; }
+div[data-_neos-form-builder-type="Neos.Form.Builder:ValidatorCollection"]::before { display:block; content:'👆 Validators'; font-weight:bold; font-size:0.7rem; color:#3f3f3f; }
+div[data-_neos-form-builder-type="Neos.Form.Builder:ValidatorCollection"] div { display:inline-block; margin-right: 0.25rem; }
+div[data-_neos-form-builder-type="Neos.Form.Builder:ValidatorCollection"] div::after { display:inline-block; margin-top:0.25rem; margin-bottom:0.25rem;
+    font-size:0.7rem; color:#FFF; background:#3f3f3f; border-radius:4px; padding:0.25rem;
+}
+div[data-_neos-form-builder-type="Neos.Form.Builder:ValidatorCollection"] div[data-_neos-form-builder-type]::after { content: 'Validator'; }
+div[data-_neos-form-builder-type="Neos.Form.Builder:ValidatorCollection"] div[data-_neos-form-builder-type="Neos.Form.Builder:EmailAddressValidator"]::after { content: 'Email Email Address Validator'; }
+div[data-_neos-form-builder-type="Neos.Form.Builder:ValidatorCollection"] div[data-_neos-form-builder-type="Neos.Form.Builder:AlphanumericValidator"]::after { content: 'Alphanumeric Validator'; }
+div[data-_neos-form-builder-type="Neos.Form.Builder:ValidatorCollection"] div[data-_neos-form-builder-type="Neos.Form.Builder:IntegerValidator"]::after { content: 'Integer Validator'; }
+div[data-_neos-form-builder-type="Neos.Form.Builder:ValidatorCollection"] div[data-_neos-form-builder-type="Neos.Form.Builder:FloatValidator"]::after { content: 'Float Validator'; }
+div[data-_neos-form-builder-type="Neos.Form.Builder:ValidatorCollection"] div[data-_neos-form-builder-type="Neos.Form.Builder:TextValidator"]::after { content: 'Text Validator'; }
+div[data-_neos-form-builder-type="Neos.Form.Builder:ValidatorCollection"] div[data-_neos-form-builder-type="Neos.Form.Builder:StringLengthValidator"]::after { content: 'String Length Validator'; }
+div[data-_neos-form-builder-type="Neos.Form.Builder:ValidatorCollection"] div[data-_neos-form-builder-type="Neos.Form.Builder:RegularExpressionValidator"]::after { content: 'Regular Expression Validator'; }
+div[data-_neos-form-builder-type="Neos.Form.Builder:ValidatorCollection"] div[data-_neos-form-builder-type="Neos.Form.Builder:NumberRangeValidator"]::after { content: 'Number Range Validator'; }
+
+div[data-_neos-form-builder-type="Neos.Form.Builder:SelectOptionCollection"] { display:block; margin-bottom:1rem; margin-top:-1rem; }
+div[data-_neos-form-builder-type="Neos.Form.Builder:SelectOptionCollection"]::before { display:block; content:'👉 Options'; font-weight:bold; font-size:0.7rem; color:#3f3f3f; }
+div[data-_neos-form-builder-type="Neos.Form.Builder:SelectOptionCollection"] div { display:inline-block; margin-right: 0.25rem; }
+div[data-_neos-form-builder-type="Neos.Form.Builder:SelectOptionCollection"] div::after { display:inline-block; margin-top:0.25rem; margin-bottom:0.25rem;
+    font-size:0.7rem; color:#FFF; background:#3f3f3f; border-radius:4px; padding:0.25rem;
+}
+div[data-_neos-form-builder-type="Neos.Form.Builder:SelectOptionCollection"] div[data-_neos-form-builder-type="Neos.Form.Builder:SelectOption"]::after { content: 'Option'; }

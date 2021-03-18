@@ -1,0 +1,25 @@
+prototype(Neos.Neos:Page) {
+    head {
+        neosrulezBootstrapFormBuilderBackendCss = Neos.Fusion:Tag {
+            @position = 'end'
+            @process.1 = ${node.context.workspaceName != 'live' ? value : ''}
+            tagName = 'link'
+            attributes {
+                media = 'all'
+                rel = 'stylesheet'
+                href = Neos.Fusion:ResourceUri {
+                    path = 'resource://NeosRulez.Bootstrap.FormBuilder/Public/Styles/Backend/backend.css'
+                }
+            }
+        }
+        neosrulezBootstrapFormBuilderDateDropperJs = Neos.Fusion:Tag {
+            @position = 'end'
+            tagName = 'script'
+            attributes {
+                src = Neos.Fusion:ResourceUri {
+                    path = 'resource://NeosRulez.Bootstrap.FormBuilder/Public/JavaScript/datedropper.pro.min.js'
+                }
+            }
+        }
+    }
+}

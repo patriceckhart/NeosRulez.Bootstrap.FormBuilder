@@ -1,0 +1,8 @@
+'NeosRulez.Bootstrap.FormBuilder:Content.NodeBasedForm':
+  superTypes:
+    'Neos.Form.Builder:NodeBasedForm': true
+    'NeosRulez.Bootstrap:Component.AbstractContent': true
+  ui:
+    label: i18n
+    icon: far fa-envelope
+    group: general

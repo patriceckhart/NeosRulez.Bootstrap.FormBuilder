@@ -1,0 +1,3 @@
+'Neos.Form.Builder:FormPage':
+  superTypes:
+    'NeosRulez.Bootstrap:Component.AbstractContent': false
