@@ -3,10 +3,12 @@
 <f:section name="field">
 	<div class="inputs-list" id="{element.uniqueIdentifier}">
 		<f:for each="{element.properties.options}" as="label" key="value" iteration="radioiterator">
-			<div class="custom-control custom-radio">
-				<f:form.radio property="{element.identifier}" id="{element.identifier}-{radioiterator.index}" class="custom-control-input" value="{value}" errorClass="{element.properties.elementErrorClassAttribute}" />
-				<label class="custom-control-label" for="{element.identifier}-{radioiterator.index}">{f:translate(id: 'forms.elements.{element.identifier}.options.{value}', package: '{element.renderingOptions.translationPackage}', value: label)}</label>
-			</div>
+            <div class="form-check">
+                <f:form.radio property="{element.identifier}" id="{element.identifier}-{radioiterator.index}" class="form-check-input" value="{value}" errorClass="{element.properties.elementErrorClassAttribute}" />
+                <label class="custom-control-label" for="{element.identifier}-{radioiterator.index}">
+                    {f:translate(id: 'forms.elements.{element.identifier}.options.{value}', package: '{element.renderingOptions.translationPackage}', value: label)}
+                </label>
+            </div>
 		</f:for>
 	</div>
 </f:section>
