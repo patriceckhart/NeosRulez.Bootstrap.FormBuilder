@@ -103,7 +103,7 @@ Neos:
             superTypes:
               'Neos.Form:SelectionMixin': true
             properties:
-              elementClassAttribute: form-control
+              elementClassAttribute: form-select
           'Neos.Form:MultiSelectionMixin':
             superTypes:
               'Neos.Form:SelectionMixin': true
@@ -122,7 +122,7 @@ Neos:
               'Neos.Form:FormElement': true
               'Neos.Form:MultiSelectionMixin': true
             properties:
-              elementClassAttribute: form-control
+              elementClassAttribute: form-select
           'Neos.Form:SingleSelectRadiobuttons':
             superTypes:
               'Neos.Form:FormElement': true

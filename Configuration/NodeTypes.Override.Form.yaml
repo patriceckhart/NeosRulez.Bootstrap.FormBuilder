@@ -20,10 +20,20 @@
       type: boolean
       ui:
         label: NeosRulez.Bootstrap.FormBuilder:NodeTypes.Content.NodeBasedForm:properties.hideLabels
-        reloadIfChanged: true
+        reloadPageIfChanged: true
         inspector:
+          hidden: 'ClientEval:node.properties.floatingLabels ? true : false'
           group: 'form'
           position: 'end'
+    'floatingLabels':
+      type: boolean
+      ui:
+        label: NeosRulez.Bootstrap.FormBuilder:NodeTypes.Content.NodeBasedForm:properties.floatingLabels
+        reloadPageIfChanged: true
+        inspector:
+          hidden: 'ClientEval:node.properties.hideLabels ? true : false'
+          group: form
+          position: end
 'Neos.Form.Builder:FormElement':
   abstract: true
   superTypes:

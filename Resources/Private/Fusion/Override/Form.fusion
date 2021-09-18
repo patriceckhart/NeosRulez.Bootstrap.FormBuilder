@@ -7,6 +7,7 @@ prototype(Neos.Form.Builder:Form) {
 prototype(Neos.Form.Builder:FormElement.Definition) {
     properties {
         hideLabels = ${q(node).property('hideLabels')}
+        floatingLabels = ${q(node).property('floatingLabels')}
     }
 }
 
