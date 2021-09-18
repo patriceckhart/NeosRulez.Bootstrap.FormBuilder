@@ -36,3 +36,5 @@ div[data-_neos-form-builder-type="Neos.Form.Builder:SelectOptionCollection"] div
     font-size:0.7rem; color:#FFF; background:#3f3f3f; border-radius:4px; padding:0.25rem;
 }
 div[data-_neos-form-builder-type="Neos.Form.Builder:SelectOptionCollection"] div[data-_neos-form-builder-type="Neos.Form.Builder:SelectOption"]::after { content: 'Option'; }
+
+div[data-_neos-form-builder-type="NeosRulez.Form.MultiColumnSection:TwoColumns"] div[data-_neos-form-builder-type="Neos.Form.Builder:ElementCollection"] { display:none; }
