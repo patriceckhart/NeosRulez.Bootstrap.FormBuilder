@@ -38,3 +38,5 @@ div[data-_neos-form-builder-type="Neos.Form.Builder:SelectOptionCollection"] div
 div[data-_neos-form-builder-type="Neos.Form.Builder:SelectOptionCollection"] div[data-_neos-form-builder-type="Neos.Form.Builder:SelectOption"]::after { content: 'Option'; }
 
 div[data-_neos-form-builder-type="NeosRulez.Form.MultiColumnSection:TwoColumns"] div[data-_neos-form-builder-type="Neos.Form.Builder:ElementCollection"] { display:none; }
+div[data-_neos-form-builder-type="NeosRulez.Form.MultiColumnSection:ThreeColumns"] div[data-_neos-form-builder-type="Neos.Form.Builder:ElementCollection"] { display:none; }
+
