@@ -3,9 +3,9 @@
 <f:section name="field">
 	<div class="inputs-list" id="{element.uniqueIdentifier}">
 		<f:for each="{element.properties.options}" as="label" key="value" iteration="checkiterator">
-			<div class="custom-control custom-checkbox">
-				<f:form.checkbox property="{element.identifier}" id="{element.identifier}-{checkiterator.index}" multiple="1" class="custom-control-input" value="{value}" errorClass="{element.properties.elementErrorClassAttribute}" />
-				<label class="custom-control-label" for="{element.identifier}-{checkiterator.index}">{f:translate(id: 'forms.elements.{element.identifier}.options.{value}', package: '{element.renderingOptions.translationPackage}', value: label)}</label>
+			<div class="form-check">
+				<f:form.checkbox property="{element.identifier}" id="{element.identifier}-{checkiterator.index}" multiple="1" class="form-check-input" value="{value}" errorClass="{element.properties.elementErrorClassAttribute}" />
+				<label class="form-check-label" for="{element.identifier}-{checkiterator.index}">{f:translate(id: 'forms.elements.{element.identifier}.options.{value}', package: '{element.renderingOptions.translationPackage}', value: label)}</label>
 			</div>
 		</f:for>
 	</div>

@@ -8,10 +8,13 @@
                 </f:if>
 			</f:if>
 		</f:if>
+		<f:if condition="{element.type}=='Neos.Form:FileUpload' || {element.type}=='Neos.Form:ImageUpload' || {element.type}=='Neos.Form:MultipleSelectCheckboxes' || {element.type}=='Neos.Form:SingleSelectRadiobuttons'">
+			<label for="{element.uniqueIdentifier}">{element -> form:translateElementProperty(property: 'label') -> f:format.nl2br()}<f:if condition="{element.required}"><f:render partial="Neos.Form:Field/Required" /></f:if></label>
+		</f:if>
 		<div class="{element.properties.containerClassAttribute}{f:if(condition: element.properties.floatingLabels, then: ' form-floating')}">
 			<f:render section="field" />
             <f:if condition="{element.properties.floatingLabels}">
-                <f:if condition="{element.type}!='Neos.Form:Checkbox'">
+                <f:if condition="{element.type}!='Neos.Form:Checkbox' && {element.type}!='Neos.Form:MultipleSelectCheckboxes' && {element.type}!='Neos.Form:FileUpload' && {element.type}!='Neos.Form:ImageUpload' && {element.type}!='Neos.Form:SingleSelectRadiobuttons'">
                     <label for="{element.uniqueIdentifier}">{element -> form:translateElementProperty(property: 'label') -> f:format.nl2br()}<f:if condition="{element.required}"><f:render partial="Neos.Form:Field/Required" /></f:if></label>
                 </f:if>
             </f:if>
