@@ -4,7 +4,7 @@
   "name": "neosrulez/bootstrap-formbuilder",
   "require": {
     "neos/neos": "*",
-    "neosrulez/bootstrap": "^5.0",
+    "neosrulez/bootstrap": "^5.0 || ^6.0",
     "neos/form-builder": "^2.2",
     "neosrulez/form-multicolumnsection": "^1.0"
   },
