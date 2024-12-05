@@ -3,5 +3,5 @@
 	<h2>{element -> form:translateElementProperty(property: 'label')}</h2>
 </f:if>
 <f:if condition="{element.properties.text}">
-	<p{f:if(condition: element.properties.elementClassAttribute, then: ' class="{element.properties.elementClassAttribute}"')}>{element -> form:translateElementProperty(property: 'text') -> f:format.nl2br()}</p>
+	<div{f:if(condition: element.properties.elementClassAttribute, then: ' class="{element.properties.elementClassAttribute}"')}>{element -> form:translateElementProperty(property: 'text') -> f:format.raw()}</div>
 </f:if>

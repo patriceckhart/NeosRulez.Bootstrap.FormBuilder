@@ -167,6 +167,10 @@ Neos:
               'Neos.Form:ReadOnlyFormElement': true
             properties:
               text: ''
+            renderingOptions:
+              templatePathPattern: 'resource://NeosRulez.Bootstrap.FormBuilder/Private/Templates/Form/{@type}.html'
+              partialPathPattern: 'resource://NeosRulez.Bootstrap.FormBuilder/Private/Templates/Form/Partials/{@type}.html'
+              layoutPathPattern: 'resource://NeosRulez.Bootstrap.FormBuilder/Private/Templates/Form/Layouts/{@type}.html'
           'Neos.Form:HiddenField':
             superTypes:
               'Neos.Form:FormElement': true
